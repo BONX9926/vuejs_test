@@ -26,4 +26,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Try todo
 ```
 [x] Create Vue-CLI Project
+[x] Add Vuetify Library
 ```
