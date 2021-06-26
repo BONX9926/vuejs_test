@@ -39,4 +39,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [x] - An add button for add data to the table(using v-dialog)
 [x] - add ability to edit row(using v-dialog)
 [x] - add ability to delete row
+[x] In List please display data from vuex to show image an name with any style you like
 ```
