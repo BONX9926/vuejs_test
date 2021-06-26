@@ -29,7 +29,10 @@ export default {
         this.$store.dispatch('Login', {
           username: this.username
         }).then( () => {
-          alert('Login Success')
+          // alert('Login Success')
+          this.$router.push({
+            name: "Welcome"
+          })
         })
       }
     }

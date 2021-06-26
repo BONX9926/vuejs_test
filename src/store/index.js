@@ -19,6 +19,11 @@ export default new Vuex.Store({
       commit('SetLogin', payload)
     }
   },
+  getters: {
+    username(state) {
+      return state.login.username
+    }
+  },
   modules: {
   }
 })
