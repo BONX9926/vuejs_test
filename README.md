@@ -28,4 +28,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [x] Create Vue-CLI Project
 [x] Add Vuetify Library
 [x] Create Login.vue and use it as home route
+[x] Keep the login name in vuex 
 ```

@@ -3,19 +3,40 @@
     <div class="loin__box">
       <h1>Login</h1>
       <div>
-        <v-text-field label="Username"></v-text-field>
+        <v-text-field label="Username" v-model="username"></v-text-field>
       </div>
       <div>
-        <v-text-field type="password" label="Password"></v-text-field>
+        <v-text-field type="password" label="Password" v-model="password"></v-text-field>
       </div>
       <div>
-        <v-btn block
-  elevation="2"
->Sign In</v-btn>
+        <v-btn @click="SignIn" block elevation="2">Sign In</v-btn>
       </div>
     </div>
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      username: "",
+      password: ""
+    }
+  },
+  methods: {
+    SignIn() {
+      if (this.username == "admin" && this.password == "admin") {
+        
+        this.$store.dispatch('Login', {
+          username: this.username
+        }).then( () => {
+          alert('Login Success')
+        })
+      }
+    }
+  }
+}
+</script>
+
 <style scoped>
 .login {
   position: relative;
