@@ -30,4 +30,5 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [x] Create Login.vue and use it as home route
 [x] Keep the login name in vuex
 [x] Create Welcome.vue and display welcome with login name in this page (Get login name from vuex) 
+[x] Add navigation pane on the left with component
 ```

@@ -2,8 +2,8 @@
   <div>
     <v-list-item>
       <v-list-item-content>
-        <v-list-item-title class="text-h6"> Application </v-list-item-title>
-        <v-list-item-subtitle> subtext </v-list-item-subtitle>
+        <v-list-item-title class="text-h6">Store Management</v-list-item-title>
+        <v-list-item-subtitle> Application </v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
 
@@ -38,9 +38,8 @@ export default {
   data() {
     return {
       items: [
-        { title: "Dashboard", icon: "mdi-view-dashboard" },
-        { title: "Photos", icon: "mdi-image" },
-        { title: "About", icon: "mdi-help-box" },
+        { title: "Stock", icon: "mdi-image" },
+        { title: "Lists", icon: "mdi-help-box" },
       ],
       right: null,
     };

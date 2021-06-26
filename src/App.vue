@@ -1,9 +1,9 @@
 <template>
 <v-app>
-  <v-navigation-drawer app>
+  <v-navigation-drawer app v-if="login">
     <navigation-left></navigation-left>
   </v-navigation-drawer>
-  <v-app-bar app>
+  <v-app-bar app v-if="login">
     <!-- -->
   </v-app-bar>
 
@@ -18,7 +18,7 @@
     </v-container>
   </v-main>
 
-  <v-footer app>
+  <v-footer app v-if="login">
     <!-- -->
   </v-footer>
 </v-app>
@@ -28,6 +28,11 @@ import NavigationLeft from "@/components/NavigationLeft"
 export default {
   components: {
     NavigationLeft
+  },
+  computed: {
+    login() {
+      return (this.$store.getters.username !== "") ? true : false
+    }
   }
 }
 </script>
