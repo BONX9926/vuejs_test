@@ -31,4 +31,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 [x] Keep the login name in vuex
 [x] Create Welcome.vue and display welcome with login name in this page (Get login name from vuex) 
 [x] Add navigation pane on the left with component
+[x] Please add anything you like in this welcome page
+[x] In the navigation pane add 3 route 1.Stock,2.List,3.Logout
+[x] Logout will clear the login name in vuex and return to login page
 ```

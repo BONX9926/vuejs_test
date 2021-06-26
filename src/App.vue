@@ -14,6 +14,7 @@
     <v-container fluid>
 
       <!-- If using vue-router -->
+      {{login}}
       <router-view></router-view>
     </v-container>
   </v-main>

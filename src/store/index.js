@@ -12,11 +12,17 @@ export default new Vuex.Store({
   mutations: {
     SetLogin(state, payload) {
       state.login = payload
+    },
+    SetLogout(state) {
+      state.login = Object.assign({ username: "" })
     }
   },
   actions: {
     Login({ commit }, payload) {
       commit('SetLogin', payload)
+    },
+    Logout({commit}){
+      commit('SetLogout')
     }
   },
   getters: {
